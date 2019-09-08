@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fireflies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="connect_remote.js"></script>
+</head>
+<body style="padding: 0; margin: 0;">
+<div class="firefly-container">
+    <div class="firefly-header">
+        <div onclick="MD_F.add()" class="btn">ADD</div>
+        <div onclick="MD_F.del()" class="btn">DEL</div>
+        <div class="firefly-info">
+            <div class="firefly-fps">
+                <span> FPS : </span>
+                <span id="fp_s">0</span>
+            </div>
+            <div class="firefly-cir">
+                <span> CIRCLES : </span>
+                <span id="ci_r">0</span>
+            </div>
+            <div class="firefly-count">
+                <span> COUNT : </span>
+                <span id="cn_t">0</span>
+            </div>
+        </div>
+        <div class="firefly-minimize" onclick="w.minimize();"></div>
+        <div class="firefly-close" onclick="w.close();"></div>
+    </div>
+    <canvas id="screen"
+            height="600"
+            width="900"
+            style="
+            border: solid 5px midnightblue;
+            background: url('space.jpg') no-repeat;
+            padding: 0;
+            margin: 0;
+            border-radius: 20px;"></canvas>
+</div>
+<script src="Module.js"></script>
+<script src="Screen.js"></script>
+<script src="Fireflies.js"></script>
+<script src="Controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.firefly-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.firefly-header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    cursor: default;
+}
+
+.firefly-info {
+    width: 600px;
+    height: 30px;
+    display: flex;
+    font-family: Verdana, serif;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: default;
+    background: black;
+    border: 3px solid midnightblue;
+    border-radius: 5px;
+}
+
+.firefly-fps {
+    color: red;
+}
+
+.firefly-cir {
+    color: blue;
+    padding-left: 40px;
+}
+
+.firefly-count {
+    color: green;
+    padding-left: 40px;
+}
+
+.firefly-close {
+    width: 30px;
+    height: 30px;
+    border: 2px solid midnightblue;
+    border-radius: 5px;
+    background: #e8eef7 url("Xmark.png") center no-repeat;
+    background-size: 80%;
+    cursor: pointer;
+}
+
+.firefly-minimize {
+    width: 30px;
+    height: 30px;
+    border: 2px solid midnightblue;
+    border-radius: 5px;
+    background: #e8eef7 url("min.png") center no-repeat;
+    background-size: 70%;
+    cursor: pointer;
+}
+
+.firefly-close:hover {
+    background: bisque url("Xmark.png") center no-repeat;
+    background-size: 80%;
+}
+
+.firefly-minimize:hover {
+    background: bisque url("min.png") center no-repeat;
+    background-size: 70%;
+}
+
+.btn {
+    width: 60px;
+    height: 30px;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: green;
+    cursor: pointer;
+    margin: 0 10px 0 10px;
+    font-family: Verdana, serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 900;
+    background: black;
+}
+
+.btn:hover {
+    background: bisque;
+    color: black;
+}

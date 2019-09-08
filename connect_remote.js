@@ -1,0 +1,1 @@
+let w = require('electron').remote.getCurrentWindow();
